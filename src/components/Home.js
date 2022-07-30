@@ -26,7 +26,7 @@ export default function Home() {
         <div className='row justify-content-evenly g-3'>
           <div className='col-12 col-md-6 col-lg-4'>
             <button type="button" class="btn btn-light" style={{ border: "2px solid #FF9F0D", backgroundColor: "white" }}>
-              <img src='time-16.png' alt='Time icon' /> <br /> 10AM to 9PM
+              <img src='time-16.png' alt='Time icon' /> <br /> 10AM to 10PM
             </button>
           </div>
           <div className='col-12 col-md-6 col-lg-4'>
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
           <div className='col-12 col-md-6 col-lg-4'>
             <button type="button" class="btn btn-light" style={{ border: "2px solid #FF9F0D", backgroundColor: "white" }}>
-              <img src='phone-28-16.png' alt='Phone' /> <br /> <a style={{ linkStyle: "none", color: "black", textDecoration: "none" }} href="tel:+92 3165538423">+92 3165538423</a>
+              <img src='phone-28-16.png' alt='Phone' /> <br /> <a style={{ linkStyle: "none", color: "black", textDecoration: "none" }}>+92-112-121-1111</a>
 
             </button>
           </div>
