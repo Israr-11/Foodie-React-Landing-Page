@@ -13,7 +13,7 @@ npm install
 
 npm start
 
-Open your favorite browser and navigate to http://localhost:3000 to experience the magic!
+Open your favorite browser and navigate to http://localhost:3000 to experience the magic 😎!
 
 The app will automatically reload as you make changes, and any lint errors will be displayed in the console.
 
