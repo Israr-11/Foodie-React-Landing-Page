@@ -34,4 +34,4 @@ npm run build
 Your optimized and minified app will be ready in the build folder, primed for deployment.
 
 ## Note to Repo Visitors:
-If you find this README helpful, don't forget to show some love! Give the repository a star to support the project. 🌟oubleshooting#npm-run-build-fails-to-minify)
+If you find this repo useful, don't forget to show some love! Give the repository a star to support the project. 🌟
