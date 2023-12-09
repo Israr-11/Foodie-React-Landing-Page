@@ -1,7 +1,7 @@
 ![3](https://github.com/Israr-11/Foodie-React-Landing-Page/assets/91403838/af35bc8f-f599-4d66-9788-746a6260b35f)# Getting Started with Create React App
 This is a foodie landing page means it's a single-page application designed for restaurant owners to quickly put their marketing on board within a limited time
 
-## `Getting Started`
+## `Follow these instructions to run app successfully`
 
 Follow these simple steps to get started with the Awesome React App:
 
@@ -9,7 +9,7 @@ Installation:
 
 npm install
 
-## `Start the App`
+## Start the App
 
 npm start
 
