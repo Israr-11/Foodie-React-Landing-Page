@@ -38,7 +38,7 @@ export default function About() {
   ];
 
   return (
-    <section className="about-section py-2">
+    <section  id="about-portion" className="about-section py-2">
       <div className="container mt-1" id="cont-2">
         <div className="row g-5 align-items-center">
 

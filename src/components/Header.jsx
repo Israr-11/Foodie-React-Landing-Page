@@ -5,13 +5,36 @@ import { FaUtensils, FaBars, FaTimes, FaPhoneAlt, FaCalendarCheck } from "react-
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('home');
   
   useEffect(() => {
     const handleScroll = () => {
+
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
+      }
+      
+      const scrollPosition = window.scrollY + 100;
+      
+      const homeSection = document.getElementById('cont-1');
+      const aboutSection = document.getElementById('cont-2');
+      const menuSection = document.querySelector('.container .row.g-3'); 
+      const testimonialSection = document.querySelector('.card[style*="margin: 0 auto"]'); 
+      
+      if (testimonialSection && scrollPosition >= testimonialSection.offsetTop && 
+          scrollPosition < testimonialSection.offsetTop + testimonialSection.offsetHeight) {
+        setActiveLink('testimonial');
+      } else if (menuSection && scrollPosition >= menuSection.offsetTop && 
+                scrollPosition < menuSection.offsetTop + menuSection.offsetHeight) {
+        setActiveLink('menu');
+      } else if (aboutSection && scrollPosition >= aboutSection.offsetTop && 
+                scrollPosition < aboutSection.offsetTop + aboutSection.offsetHeight) {
+        setActiveLink('about');
+      } else if (homeSection && scrollPosition >= homeSection.offsetTop && 
+                scrollPosition < homeSection.offsetTop + homeSection.offsetHeight) {
+        setActiveLink('home');
       }
     };
     
@@ -23,11 +46,17 @@ export default function Header() {
     alert("Call us at the number below to make a reservation");
   };
   
+  const handleLinkClick = (event) => {
+    event.preventDefault();
+
+    setMobileMenuOpen(false);
+  };
+  
   const navLinks = [
-    { title: "Home", href: "/#", active: true },
-    { title: "Packages", href: "/#", active: false },
-    { title: "About Us", href: "/#", active: false },
-    { title: "Contact Us", href: "/#", active: false }
+    { title: "Home", href: "/#", sectionId: "home", active: activeLink === 'home' },
+    { title: "Menu", href: "/#", sectionId: "menu", active: activeLink === 'menu' },
+    { title: "About Us", href: "/#", sectionId: "about", active: activeLink === 'about' },
+    { title: "Testimonial", href: "/#", sectionId: "testimonial", active: activeLink === 'testimonial' }
   ];
 
   return (
@@ -37,6 +66,7 @@ export default function Header() {
           <motion.a 
             className="navbar-brand" 
             href="/#"
+            onClick={handleLinkClick}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -62,6 +92,7 @@ export default function Header() {
                   <a 
                     href={link.href} 
                     className={link.active ? 'active' : ''}
+                    onClick={handleLinkClick}
                   >
                     {link.title}
                     {link.active && <span className="active-indicator"></span>}
@@ -116,7 +147,7 @@ export default function Header() {
                   <a 
                     href={link.href} 
                     className={link.active ? 'active' : ''}
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={handleLinkClick}
                   >
                     {link.title}
                   </a>

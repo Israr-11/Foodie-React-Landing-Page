@@ -97,7 +97,7 @@ export default function Testimonial() {
   };
 
   return (
-    <div className="testimonial-section py-5">
+    <div id="testimonial-portion" className="testimonial-section py-5">
       <div className="container">
         <div className="text-center mb-5">
           <p

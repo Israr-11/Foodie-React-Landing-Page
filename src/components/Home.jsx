@@ -548,6 +548,9 @@ export default function Home() {
         }
         
         @media (max-width: 576px) {
+        .hero-section {
+            margin-top: 5;
+          }
           .hero-badge {
             font-size: 0.8rem;
           }

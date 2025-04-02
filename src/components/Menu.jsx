@@ -69,7 +69,7 @@ export default function Menu(props) {
       : menuItems.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="menu-section py-5">
+    <div id="menu-portion" className="menu-section py-5">
       <div className="container">
         <div className="text-center mb-5">
           <motion.p
