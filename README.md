@@ -1,5 +1,5 @@
 ![3](https://github.com/Israr-11/Foodie-React-Landing-Page/assets/91403838/af35bc8f-f599-4d66-9788-746a6260b35f)# Getting Started with Create React App
-This is a foodie landing page means it's a single-page application designed for restaurant owners to quickly put their marketing on board within a limited time
+This is a foodie landing page means it's a single-page application designed for restaurant owners to put their marketing on board within a limited time quickly
 
 ## `Follow these instructions to run the app successfully`
 
