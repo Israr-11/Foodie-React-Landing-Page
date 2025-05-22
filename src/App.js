@@ -17,7 +17,7 @@ function App() {
       <Menu
         pic1="pic1.jpg"
         name1="Chicken Salad &nbsp; $12"
-        text1="Try it out its best"
+        text1="Try it out it's best"
         pic2="pic2.jpg"
         name2="Cheese Burger &nbsp; $15"
         text2="Yummy food for hunger"
