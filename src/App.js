@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Menu from "./components/Menu";
 import About from "./components/About";
 import Working from "./components/Working";
-import Testimonial from "./components/Testimonial";
+import Testimonial from "./components/Testimonial"
 import Footer from "./components/Footer";
 
 function App() {
