@@ -12,6 +12,7 @@ function App() {
     <div>
       <Header />
       <Home />
+    
       <About />
       <Working />
       <Menu
