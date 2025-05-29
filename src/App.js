@@ -30,7 +30,7 @@ function App() {
         text4="Nice ingredients for health"
         pic5="pic5.png"
         name5="kabab &nbsp; $13"
-        text5="Nutrition rich food"
+        text5="Nutrition-rich food"
         pic6="pic6.jpg"
         name6="Healthy Salad &nbsp; $07"
         text6="Best for health"
